@@ -1,0 +1,252 @@
+body{
+    margin: 0;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.clickableText{
+    cursor: pointer;
+}
+
+.clickableText:hover{
+    text-decoration: underline;
+}
+
+.clickableText:active{
+    font-size: 1.05rem;
+}
+
+#containerRoot{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(0, 100%, 50%);
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+#leftBar{
+    grid-column: 1 / 4;
+    grid-row: 1 / 10;
+    background-color: hsl(126, 100%, 78%);
+}
+
+.icon{
+    height: 24px;
+}
+
+.iconText{
+    font-size: 1.1rem;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+#soccerIcon{
+    float: left;
+    height: 40px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+h3{
+    font-size: 1.7rem;
+    font-family: system-ui;
+}
+
+#dashboardGrid{
+    display: grid;
+    grid-template-columns: 24px 24px;
+    grid-template-rows: repeat(10, 24px);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-left: 28px;
+}
+
+#topBar{
+    grid-column: 4 / 17;
+    grid-row: 1 / 3;
+    background-color: white;
+    box-shadow: 0px 2px 6px hsla(0, 0%, 0%, 0.29);
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#search{
+    grid-column: 1 / 9;
+    grid-row: 1 / 2;
+}
+
+#search img{
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+    margin-right: 0.5rem;
+}
+
+#search input{
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: lightgrey;
+    position: relative;
+    height: 1.2rem;
+    width: 30rem;
+    bottom: 0.5rem;
+}
+
+#notifications{
+    grid-column: 10 / 14;
+    grid-row: 1 / 2;
+}
+
+#sino{
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+#fotobroca{
+    margin-top: 0.2rem;
+}
+
+#nomebroca:hover{
+    text-decoration: underline;
+}
+
+#nomebroca:active{
+    color: blue;
+}
+
+#pfp{
+    grid-column: 1 / 10;
+    grid-row: 2 / 4;
+}
+
+#pfp img{
+    margin-left: 7vw;
+    position: relative;
+    bottom: 0.3rem;
+}
+
+#buttons{
+    grid-column: 10 / 14;
+    grid-row: 2 / 4;
+}
+
+#buttons button{
+    margin-top: 3.5vh;
+    background-color: hsl(126, 100%, 78%);
+    border: 1px solid hsl(126, 100%, 78%);
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 5rem;
+    cursor: pointer;
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+#buttons button:hover{
+    background-color: hsl(120, 100%, 59%);
+}
+
+#mainContent{
+    grid-column: 4 / 17;
+    grid-row: 3 / 10;
+    background-color: hsl(148, 19%, 87%);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 4fr 4fr;
+    padding: 10px;
+    gap: 10px 10px;
+}
+
+.project{
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid hsl(139, 100%, 29%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.385);
+}
+
+.project:hover{
+    background-color: hsl(0, 0%, 92%);
+}
+
+.projectName{
+    font-family: system-ui;
+    font-weight: bold;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.projectText{
+    font-family: system-ui;
+    grid-column: 1 / 4;
+    grid-row: 2 / 4;
+}
+
+.projectIcons{
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    margin-left: 1rem;
+}
+
+#projectTitle{
+    font-size: 1rem;
+    font-family: system-ui;
+    font-weight: bold;
+    grid-column: 1 / 4;
+}
+
+#sideContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 10fr 1.2fr 10fr;
+    padding: 10px;
+}
+
+.sideText{
+    font-family: system-ui;
+    font-weight: bold;
+}
+
+#sideAn{
+    font-family: system-ui;
+    font-size: 0.8rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.322);
+}
+
+#sideTrend{
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.322);
+}
+
+.trendText{
+    font-size: 0.9rem;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.trendText:hover{
+    text-decoration: underline;
+}
